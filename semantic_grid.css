@@ -1,0 +1,45 @@
+.tt {
+  font-family: "Courier New", Courier, monospace;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "header header"
+    "nav nav"
+    "main aside"
+    "footer footer";
+}
+
+header {
+  background-color: aquamarine;
+  border: 3px black solid;
+  grid-area: header;
+}
+
+nav {
+  background-color: crimson;
+  border: 3px black solid;
+  grid-area: nav;
+}
+
+main {
+  border: 3px black solid;
+  grid-area: main;
+}
+
+aside {
+  grid-area: aside;
+  border: 3px black solid;
+  height: 300px;
+}
+
+footer {
+    grid-area: footer;
+    border: 3px black solid;
+}
+
+section {
+  border: 1px black dotted;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>Dark Mode Demo</title>
+    <link href="./colorscheme.css" rel="stylesheet" />
+    <script src="./script.js" defer></script>
+  </head>
+
+  <body>
+    <h1 aria-roledescription="heading">Dark Mode Demo</h1>
+    <div class="day" style="height: 100px; width: 100px">Day!</div>
+    <div class="night" style="height: 100px; width: 100px">Night!</div>
+
+    <div>
+      <form>
+        <label>Day <input type="text" id="day" /></label>
+        <label for="moth">Month</label>
+        <input type="text" id="moth" />
+        <label id="year-label">Year</label>
+        <input type="text" id="year" aria-labelledby="year-label" />
+      </form>
+      <p style="font-weight: bold" aria-roledescription="button">
+        Fake Submit Button
+      </p>
+      <button onclick="clicked()">Actual Button Submit Button</button>
+      <button>Another button</button>
+    </div>
+  </body>
+</html>

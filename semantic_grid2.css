@@ -1,0 +1,47 @@
+
+#outer-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: 
+        "header header"
+        "nav nav"
+        "main aside"
+        "footer footer";
+}
+
+header {
+    grid-area: header;
+    background-color: aqua
+}
+
+nav {
+    grid-area: nav;
+    background-color: brown;
+}
+
+@media print {
+    nav {
+        background-color: white;
+    };
+}
+
+@media (max-width: 500px) {
+    nav {
+        background-color: dodgerblue;
+    }
+}
+
+main {
+    grid-area: main;
+    display: flex;
+    flex-direction: row;
+}
+
+aside {
+    grid-area: aside;
+}
+
+footer {
+    grid-area: footer;
+    background-color: blanchedalmond;
+}
